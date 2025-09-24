@@ -44,6 +44,11 @@ npm run dev
 
 Check out the page on [localhost:3000](http://localhost:3000)
 
+To run the tests
+```bash
+npm run test
+```
+
 ## Getting started
 
 Get started by having a look at the relevant files
