@@ -16,7 +16,7 @@ export default function Stepper({Step}:StepperProps) {
 				"h-[100px] border border-dashed border-gray-200 rounded flex justify-center items-center "
 			}
 		>
-			<div className="flex w-1/4 ">
+			<div className="flex w-full mx-10">
 				<div className="flex flex-col items-center justify-center absolute">
 					<div className="bg-gray-500 p-2 w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-white">
 					1
@@ -26,12 +26,15 @@ export default function Stepper({Step}:StepperProps) {
 
 				<div className="flex-1 h-1 w-10 bg-black  top-5 relative -z-10"></div>
 
-				<div className="flex flex-col items-center justify-center">
+				<div className="flex flex-col items-center justify-center absloute">
 					<div className="bg-gray-300 w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-white">
 					2
 					</div>
 					<div>step1</div>
 				</div>
+
+				
+
     </div>
 
 			
