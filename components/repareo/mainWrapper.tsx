@@ -8,6 +8,7 @@ export default function MainWrapper({ children }: { children: ReactNode }) {
 					"grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] lg:gap-24 px-6 lg:px-0"
 				}
 			>
+				
 				{children}
 			</div>
 		</main>
