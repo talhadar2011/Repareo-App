@@ -5,7 +5,7 @@ export default function ButtonWrapper({ children }: { children: ReactNode }) {
 		<div className={"lg:pt-12"}>
 			<div
 				className={
-					"hidden lg:block rounded border border-dashed border-gray-200 h-[640px]"
+					"hidden lg:block rounded border border-dashed border-gray-400 h-[640px]"
 				}
 			/>
 			{children}

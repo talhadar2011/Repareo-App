@@ -6,7 +6,7 @@ export default function StepperWrapper({ children }: { children: ReactNode }) {
 			<div className={"py-4 lg:py-8"}>{children}</div>
 			<div
 				className={
-					"rounded border border-dashed border-gray-200 h-[169px] lg:h-[638px]"
+					"rounded border border-dashed border-gray-400 h-[169px] lg:h-[638px]"
 				}
 			></div>
 		</div>

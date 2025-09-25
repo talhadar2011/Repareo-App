@@ -13,7 +13,7 @@ export default function Stepper({Step}:StepperProps) {
 	return (
 		<div
 			className={
-				"h-[100px] border border-dashed border-gray-200 rounded flex justify-center items-center "
+				"h-[100px] border border-dashed border-gray-400 rounded flex justify-center items-center "
 			}
 		>
 			
