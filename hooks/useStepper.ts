@@ -4,7 +4,7 @@ export default function useStepper() {
 	const [currentStep, setCurrentStep] = useState<number>(0);
 	function handleNextStep() {
 		console.log(steps.length)
-		if(steps.length>currentStep){
+		if(currentStep<steps.length-1){
 			setCurrentStep((prev) => {
 			return prev + 1;
 		});
