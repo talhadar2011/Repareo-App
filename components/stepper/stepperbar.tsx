@@ -18,7 +18,7 @@ export default function stepperbar({Step,index,st}:PropsType) {
 					{(index+1===steps.length)?<div className='flex-1'></div>:<div className={`flex-1 h-1 top-15 w-10 md:w-24 lg:w-30  -z-10 ${index<Step?"bg-blue-500":"bg-gray-300"}`}></div>}
 
 				</div>
-				<div>
+				<div className={`${index<=Step?"font-bold":"font-normal"}`}>
 				{st.title}
 
 				</div>
