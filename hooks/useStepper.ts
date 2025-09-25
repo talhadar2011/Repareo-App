@@ -11,6 +11,7 @@ export default function useStepper() {
 		}else{
 			return currentStep
 		}
+		console.log(currentStep,"currentsteps")
 		
 	}
 	return { currentStep, handleNextStep };
