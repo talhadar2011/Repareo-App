@@ -9,6 +9,7 @@ export default function Stepper() {
 			}
 		>
 			<code className={"text-2xl"}>{"<Stepper />"}</code>
+			hello World
 		</div>
 	);
 }
