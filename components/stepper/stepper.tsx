@@ -1,7 +1,13 @@
-interface StepperProps {}
+import { useEffect } from "react";
 
-export default function Stepper() {
+interface StepperProps {
+	Step:number
+}
+
+export default function Stepper({Step}:StepperProps) {
 	/*TODO: Replace this with the actual Stepper implementation*/
+	useEffect(()=>{
+	},[Step])
 	return (
 		<div
 			className={
@@ -9,7 +15,7 @@ export default function Stepper() {
 			}
 		>
 			<code className={"text-2xl"}>{"<Stepper />"}</code>
-			hello World
+				{Step}
 		</div>
 	);
 }
