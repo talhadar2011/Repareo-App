@@ -7,12 +7,11 @@ export const steps: Step[] = [
 	{title:"Termin"},
 	{title:"Fahrzeug"},
 	{title:"Kontakt"},
-		{title:"Kontakt"},
-				{title:"Kontakt"},
-		{title:"Kontakt"},
-		{title:"Kontakt"},
-		{title:"Kontakt"},
-		{title:"Kontakt"},
+	{title:"Kontakt"},
+	{title:"Kontakt"},
+	{title:"Kontakt"},
+	{title:"Kontakt"},
+
 
 
 	

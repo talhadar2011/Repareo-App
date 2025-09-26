@@ -12,12 +12,10 @@ export default function Stepper({Step}:StepperProps) {
 	return (
 		<div
 			className={
-				"h-[100px] border border-dashed border-gray-400 rounded flex justify-center items-center max-w-screen-lg"
+				"h-[100px] border border-dashed border-gray-400 rounded flex justify-center items-center max-w-screen-2xl"
 			}
-		>
-			
-			<div className={`flex mx-10  overflow-x-auto justify-start items-center`}>
-				{steps.map((step,index)=>(
+		>		<div className={`flex overflow-x-auto justify-start items-center sm:mx-10`}>
+{steps.map((step,index)=>(
 					<Stepperbar Step={Step} index={index} step={step}/>
 				
 			))}	
