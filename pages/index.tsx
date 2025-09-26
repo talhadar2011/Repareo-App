@@ -9,7 +9,6 @@ import useStepper from "../hooks/useStepper";
 
 export default function Home() {
 	const { currentStep, handleNextStep } = useStepper();
-	console.log(currentStep,steps.length,"COM")
 	return (
 		<>
 			<Header />

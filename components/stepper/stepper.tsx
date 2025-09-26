@@ -8,7 +8,6 @@ interface StepperProps {
 export default function Stepper({Step}:StepperProps) {
 	/*TODO: Replace this with the actual Stepper implementation*/
 	useEffect(()=>{
-		console.log(Step,"StepperComponete USeeffect")
 	},[Step])
 	return (
 		<div
@@ -18,8 +17,8 @@ export default function Stepper({Step}:StepperProps) {
 		>
 			
 			<div className="flex  mx-10 ">
-				{steps.map((st,index)=>(
-					<Stepperbar Step={Step} index={index} st={st}/>
+				{steps.map((step,index)=>(
+					<Stepperbar Step={Step} index={index} step={step}/>
 				
 			))}	
 
