@@ -16,7 +16,7 @@ export default function Stepper({Step}:StepperProps) {
 			}
 		>
 			
-			<div className="flex mx-10 overflow-x-auto justify-start items-center">
+			<div className="flex mx-10  sm:overflow-x-auto justify-start items-center">
 				{steps.map((step,index)=>(
 					<Stepperbar Step={Step} index={index} step={step}/>
 				
