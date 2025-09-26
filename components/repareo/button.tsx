@@ -1,16 +1,18 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
+import React from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	children: ReactNode;
 	color?: "primary" | "secondary";
 }
 
-export default function Button({
+function Button({
 	onClick,
 	children,
 	color = "primary",
 }: ButtonProps) {
 	let colorCns = "bg-blue-600 text-white";
+	console.log("ButtonRerender")
 	if (color === "secondary") {
 		colorCns = "bg-white border border-gray-200 text-black";
 	}
@@ -24,3 +26,5 @@ export default function Button({
 		</button>
 	);
 }
+export default React.memo(Button);
+

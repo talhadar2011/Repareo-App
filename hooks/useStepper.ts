@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { steps } from "../components/stepper/steps";
 export default function useStepper() {
 	const [currentStep, setCurrentStep] = useState<number>(0);
-	function handleNextStep() {
-//		console.log(steps.length)
+	const handleNextStep=useCallback(()=> {
 		if(currentStep<steps.length-1){
 			setCurrentStep((prev) => {
 			return prev + 1;
@@ -11,8 +10,7 @@ export default function useStepper() {
 		}else{
 			return currentStep
 		}
-		//console.log(currentStep,"currentsteps")
 		
-	}
+	},[])
 	return { currentStep, handleNextStep };
 }
